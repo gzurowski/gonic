@@ -24,6 +24,6 @@ jobs:
         with:
           version: v1.52.2
           skip-go-installation: true
-          args: "--timeout=5m --verbose"
+          args: "--timeout=5m --verbose --out-format=github-actions"
       - name: Test
         run: go test ./...
